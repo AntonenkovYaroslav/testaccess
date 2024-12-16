@@ -11,7 +11,18 @@ namespace ConsoleAcces
     {
         static void Main(string[] args)
         {
-            Process.Start("explorer.exe", "-p");
+            Console.Write("введите число 5 нахуй ");
+            int b = Console.Read();
+            Console.Write(b);
+            Console.ReadLine();
+            if (b == 5)
+            {
+                Console.WriteLine("Я ЕБАЛ ВАШУ ХУЙНЮ ЕБАННУЮ БЛЯТЬ");
+            }
+            else {
+                Console.WriteLine("Даун?");
+            }
+            Console.ReadKey();
         }
     }
 }

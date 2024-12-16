@@ -332,6 +332,7 @@ namespace testaccess
                             // Открываем файл и считываем текст  
                             using (var docFile = new FileStream(filePath, FileMode.Open, FileAccess.Read))
                             {
+                                HWPFDocument namedoc = new HWPFDocument(docFile);
                                 HWPFDocument document = new HWPFDocument(docFile);
                                 NPOI.HWPF.UserModel.Range range = document.GetRange(); // Получаем диапазон документа  
 
